@@ -1,0 +1,134 @@
+:root{
+    --bgcolor:#883336;
+    --hlcolor:#f08930;
+    --sdcolor:#F5F5E5;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: var(--bgcolor);
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--sdcolor);
+    padding-bottom: 30px;
+
+}
+
+header .container {
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header .logo {
+    margin-top:5px;
+    margin-left:10px;
+    color: var(--hlcolor);
+    font-family: 'Style Script', cursive;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration:none;
+    color: var(--sdcolor);
+    margin-right:10px;
+}
+
+header nav a:hover {
+    color:var(--hlcolor);
+}
+
+.videoCapa {
+    background: url('/ChefFlix/img/cupcakes2.jpg');
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.videoCapa .descricao {
+    font-weight:bolder;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.videoCapa .titulo{
+    margin-top: 15%;
+    font-size:32px;
+}
+
+.botao {
+    background-color: rgba(239,150,84,0.9);
+    border:none;
+    color:var(--sdcolor);
+    padding:15px 30px;
+    margin:10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.botao:hover{
+    background-color: var(--sdcolor);
+    color:var(--hlcolor);
+}
+
+.botao i{
+    margin-right:8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+h3 {
+    font-size:16px;
+    font-weight: normal;
+}
+
+.owl-carousel {
+    margin-top: 5px;
+}
+.boxSize {
+    height: 120px;
+    width:100%;
+    display:inline;
+}
+
+@media screen and (max-width:700px){
+ 
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav {
+        margin-bottom: 10px;
+        font-size:14px;
+    }
+
+    .botao {
+        margin-top: 5px;
+        width: 200px;
+        font-size:10px;
+        font-weight:bold;
+    }
+}
+
+@media screen and (max-width:400px){
+    header nav a{
+        font-size:10px;
+        margin-right:3px;
+    }
+
+    .container {
+        margin-left: 7px;
+    }
+
+}
